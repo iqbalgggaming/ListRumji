@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #020617, #071b38, #00112b);
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+    background: linear-gradient(90deg, #06152e, #003b75, #06152e);
+    border-bottom: 2px solid #168cff;
+    box-shadow: 0 0 20px #007bff55;
+}
+
+header h1 {
+    font-size: 27px;
+    letter-spacing: 2px;
+    color: #66c5ff;
+    text-shadow: 0 0 15px #008cff;
+}
+
+header p {
+    margin-top: 10px;
+    color: #b9dfff;
+    letter-spacing: 3px;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 35px auto;
+}
+
+.container h2 {
+    text-align: center;
+    color: #61c5ff;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.member {
+    background: linear-gradient(120deg, #0b1e3b, #102e52);
+    border: 1px solid #167ddd;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 12px #007bff22;
+    transition: 0.3s;
+}
+
+.member:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px #008cff77;
+    border-color: #62c5ff;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 120px;
+}
+
+.person h3 {
+    font-size: 19px;
+    color: white;
+}
+
+.number {
+    background: #0878d1;
+    color: white;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: auto minmax(110px, 150px);
+    gap: 10px;
+    align-items: center;
+}
+
+.settings label {
+    color: #8dcfff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+select {
+    background: #06172d;
+    color: white;
+    border: 1px solid #168cff;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+select:focus {
+    border-color: #66c5ff;
+    box-shadow: 0 0 10px #008cff;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #7daed6;
+    border-top: 1px solid #164a77;
+    margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 21px;
+    }
+
+    .member {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .settings {
+        grid-template-columns: 75px 1fr;
+    }
+}
